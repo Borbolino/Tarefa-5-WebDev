@@ -52,7 +52,8 @@ function coloca_latas_na_tela() {
     let comidaSpan = lata.elemento.firstElementChild;
 
     // remove todas as classes do elemento
-    lata.elemento.className = "";
+    lata.elemento.className = lata.opcao;
+    comidaSpan.innerText = lata.opcao;
 
     /* Adicionar codigos aqui para mudar o conteudo
       * do span de acordo com o nome.
